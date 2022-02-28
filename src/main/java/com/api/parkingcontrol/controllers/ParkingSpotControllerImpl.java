@@ -1,7 +1,7 @@
 package com.api.parkingcontrol.controllers;
 
-import com.api.parkingcontrol.dtos.ParkingSpotInsertDto;
-import com.api.parkingcontrol.dtos.ParkingSpotUpdateDto;
+import com.api.parkingcontrol.dtos.input.ParkingSpotInsertDto;
+import com.api.parkingcontrol.dtos.input.ParkingSpotUpdateDto;
 import com.api.parkingcontrol.models.ParkingSpotModel;
 import com.api.parkingcontrol.services.ParkingSpotService;
 import io.swagger.annotations.Api;

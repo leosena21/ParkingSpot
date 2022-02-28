@@ -1,6 +1,6 @@
 package com.api.parkingcontrol.services;
 
-import com.api.parkingcontrol.dtos.ParkingSpotUpdateDto;
+import com.api.parkingcontrol.dtos.input.ParkingSpotUpdateDto;
 import com.api.parkingcontrol.models.ParkingSpotModel;
 import com.api.parkingcontrol.repositories.ParkingSpotRepository;
 import com.api.parkingcontrol.services.exceptions.ObjectNotFoundException;
@@ -47,11 +47,8 @@ public class ParkingSpotService {
     }
 
     public ParkingSpotModel findById(UUID id) {
-        Optional<ParkingSpotModel> model = parkingSpotRepository.findById(id);
-        if(!model.isPresent()){
-            throw new ObjectNotFoundException("ParkingSpotModel id: " + id + ", Tipo: " + ParkingSpotService.class.getName());
-        }
-        return model.get();
+        return  parkingSpotRepository.findById(id).orElseThrow(
+            ()-> new ObjectNotFoundException("ParkingSpotModel id: " + id + ", Tipo: " + ParkingSpotService.class.getName()));
     }
 
     @Transactional
