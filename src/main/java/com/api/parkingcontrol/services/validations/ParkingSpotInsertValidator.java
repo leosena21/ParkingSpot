@@ -1,6 +1,6 @@
 package com.api.parkingcontrol.services.validations;
 
-import com.api.parkingcontrol.dtos.ParkingSpotInsertDto;
+import com.api.parkingcontrol.dtos.input.ParkingSpotInsertDto;
 import com.api.parkingcontrol.services.ParkingSpotService;
 import com.api.parkingcontrol.controllers.exceptions.FieldMessage;
 import com.api.parkingcontrol.services.validations.annotations.ParkingSpotInsert;

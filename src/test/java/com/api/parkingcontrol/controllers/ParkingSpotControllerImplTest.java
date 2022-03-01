@@ -8,8 +8,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import com.api.parkingcontrol.dtos.ParkingSpotInsertDto;
-import com.api.parkingcontrol.dtos.ParkingSpotUpdateDto;
+import com.api.parkingcontrol.dtos.input.ParkingSpotInsertDto;
+import com.api.parkingcontrol.dtos.input.ParkingSpotUpdateDto;
 import com.api.parkingcontrol.models.ParkingSpotModel;
 import com.api.parkingcontrol.repositories.ParkingSpotRepository;
 import com.api.parkingcontrol.services.ParkingSpotService;
